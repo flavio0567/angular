@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <div style="text-align:cleft">
+    <h1>
+      {{title}}
+    </h1>
+  </div>
+  <table>
+    <thead>
+        <tr>
+          <th>Email</th>
+          <th>Importance</th>
+          <th>Subject</th>
+          <th>Content</th>
+        </tr>
+    </thead>
+    <tr *ngFor='let mail of mails'>
+      <td>{{ mail.email | lowercase }}</td>
+      <td>
+        <span *ngIf='mail.importance'>High</span>
+        <span *ngIf='!mail.importance'>Low</span>
+      </td>
+      <td>{{ mail.subject }}</td>
+      <td>{{ mail.content }}></td>
+    </tr>
+  </table>
+</div>
