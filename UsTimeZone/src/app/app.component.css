@@ -1,0 +1,40 @@
+h1 {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+  }
+
+.container {
+    width: 970px;
+    height: 250px;
+    display: inline-block
+}
+
+#left {
+    display: inline-block
+}
+
+#mid_1 {
+    display: inline-block
+}
+
+#mid_2 {
+    display: inline-block
+}
+
+#right {
+    display: inline-block
+}
+
+.btn {
+    width: 45px;
+    height: 45px;
+    margin-left: 30px;
+    margin-top: 10px;
+    border: 2px solid grey;
+    display: inline-block
+}
+
+.on { background-color: yellow; }
+
+.off { background-color: transparent; }

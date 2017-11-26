@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{title}}!
+  </h1>
+</div>
+
+<div id="left">
+  <button class="btn" (click) = "getDateByZone('PST')"[ngClass]="{on: myTimeZone === 'PST'}">PST</button>
+</div>
+<div id="mid_1">
+  <button class="btn" (click) = "getDateByZone('MST')"[ngClass]="{on: myTimeZone === 'MST'}">MST</button>
+</div>
+<div id="mid_2">
+  <button class="btn" (click) = "getDateByZone('CST')"[ngClass]="{on: myTimeZone === 'CST'}">CST</button>
+</div>
+<div id="right">
+  <button class="btn" (click) = "getDateByZone('EST')"[ngClass]="{on: myTimeZone === 'EST'}">EST</button>
+</div>
+
+<button class="btn" onClick="history.go(0)" VALUE="Refresh" (click)="time = ''"[ngClass]="{off: myTimeZone}">Clear</button>
+
+<div style="text-align:center">
+<h2>{{ time | date:'MMM dd, yyyy, h:mm:ss a'}} </h2>
+</div>
