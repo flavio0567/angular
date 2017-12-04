@@ -1,0 +1,11 @@
+<div style="text-align:center">
+  <h1>
+    {{title}}!
+  </h1>
+</div>
+<div class="container text-align">
+<div class="left" *ngFor="let item of items;let i = index">
+    <button *ngIf = "item" [ngClass]="{'background': true}"  (click) = "switchButton(i)" >ON</button>
+    <button *ngIf = "!item" [ngClass]="{'background-off': true}" (click) = "switchButton(i)">OFF</button>
+  </div>
+</div>
