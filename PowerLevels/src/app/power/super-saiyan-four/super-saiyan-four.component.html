@@ -1,0 +1,12 @@
+<fieldset>
+  <h3>
+    SuperSaiyanFourComponent
+  </h3>
+
+  <p>Power Level: {{ valueToChange }}</p>
+  
+  <h4 *ngIf="valueToChange > 9000 && valueToChange <= 20000">"Over 9000!"</h4>
+  <h4 *ngIf="valueToChange > 20000 && valueToChange < 50000">"Superlative!"</h4>
+  <h4 *ngIf="valueToChange >= 50000">"The One!"</h4>
+  
+</fieldset>

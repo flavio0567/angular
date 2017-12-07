@@ -1,0 +1,55 @@
+fieldset{
+    width:770px;
+    height:480px;
+    margin: 15px;
+    border:2px solid black;
+    margin-bottom: 50px;
+}
+input, h2{
+    margin: 10px;
+}
+
+.content{
+    width:850px;
+    height:400px;
+}
+
+h3{
+    width:150px;
+    margin-top:-10px;
+    margin-left:5px;
+    background:white;
+    font-size: 1em;
+}
+
+.left-side{
+    width:50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.middle{
+    width:30%;
+    margin-top: 62px;
+    display: inline-block;
+}
+.right-side{
+    width:40%;
+    display: inline-block;
+    margin-left:600px;
+}
+
+img{
+    width: 40%;
+    margin-left: 20px;
+}
+
+h2{
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+select{
+    display: inline-block;
+}
+

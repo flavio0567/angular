@@ -1,0 +1,39 @@
+<fieldset><h3>Power Component</h3>
+
+  <div  class="form-group left-side">
+    <h2>Initial Power Level: {{ selectedPower }}</h2>
+
+    <label>Select a number from 1 to 100:</label>
+    <input type="number" max="100" min="0" [(ngModel)]="selectedPower">
+
+  </div>
+
+  <div class="middle">
+    <button type="submit" class="btn btn-primary" 
+    (click)="setValue(selectedPower)">Calculate Powers</button>
+  </div>
+
+  <div class="right-side">
+    <img src="./assets/saiyan.jpeg" alt="Saiyan image">
+  </div>
+
+  <div class="content">
+    <!-- <app-human 
+    [valueToChange]="objectToChange"
+    (resetValueAtParent)="resetToDefaultValue();"
+    (parentValueChanged)="keepChildValue($event)">
+    </app-human> -->
+    <app-human [valueToChange]="selectedPower"></app-human>
+
+
+    <app-saiyan [valueToChange]="selectedPower"></app-saiyan>
+
+    <app-super-saiyan [valueToChange]="selectedPower"></app-super-saiyan>
+
+    <app-super-saiyan-two [valueToChange]="selectedPower"></app-super-saiyan-two>
+
+    <app-super-saiyan-three [valueToChange]="selectedPower"></app-super-saiyan-three>
+
+    <app-super-saiyan-four [valueToChange]="selectedPower"></app-super-saiyan-four>
+  </div>
+</fieldset>
