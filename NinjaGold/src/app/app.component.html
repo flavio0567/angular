@@ -1,0 +1,17 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+</div>
+
+<div class="container">
+  
+    <h4>Your Gold: {{ earn }}</h4>         
+    
+</div>
+
+<app-earn-gold
+(sendGoldToParent)="getGold($event);"></app-earn-gold>
+<app-message
+[mess]="mess"
+[switch]="switch"></app-message>

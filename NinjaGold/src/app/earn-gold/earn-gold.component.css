@@ -1,0 +1,23 @@
+.container {
+    width: 1000px;
+    height: 250px;
+    display: inline-block
+}
+
+#left {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid grey;
+    display: inline-block
+}
+
+h3 {
+    margin-left: 50px;
+}
+
+.btn {
+    margin-left: 40px;
+    margin-top: 10px;
+}

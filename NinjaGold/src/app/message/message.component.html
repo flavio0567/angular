@@ -1,0 +1,16 @@
+<div id="scroll">  
+  <h3>Activities:</h3>
+  <div>
+
+    <div class="activity" *ngFor="let m of mess; let i = index">
+      <ul>      
+        <li>{{ m }}</li>
+      </ul>
+              
+      <!-- <div *ngFor="let s of switch">
+      {{ s }}
+      <p *ngIf="s(i)" [ngClass]="{'earn': true}" >{{ m }}</p>
+      <p *ngIf="!s(i)" [ngClass]="{'lost': true}" >{{ m }}</p>
+    </div> -->
+  </div>
+</div>

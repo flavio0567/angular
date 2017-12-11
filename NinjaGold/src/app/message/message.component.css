@@ -1,0 +1,22 @@
+p {
+    margin-left: 40px;
+}
+
+#scroll {
+    width:870px;
+    margin-left: 10px;
+    height:150px;
+    overflow:auto;
+    border:4px solid yellowgreen;
+    /* padding: 2% */
+}
+
+.lost {
+    color: red;
+    font-weight: bold;
+}
+
+.earn {
+    color: green;
+    font-weight: bold;
+}
